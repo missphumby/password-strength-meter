@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB44V3-0DEkiWqtP3AIS5ImqXWK8dcP-wI&libraries=places"
+    ></script>
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Password Strength Indicator | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>Register</header>
+      <form action="#">
+        <div class="userfield">
+          <input type="text" placeholder="Enter Username" />
+        </div>
+        <br />
+        <!-- <label for="password" style="text-align: left; margin-left: 0;">Enter password</label><br> -->
+        <div class="field">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+          <span class="showBtn"><i class="fa fa-eye"></i></span>
+        </div>
+        <br />
+        <meter max="4" id="password-strength-meter"></meter>
+        <p id="password-strength-text"></p>
+        <div class="text">
+          <ul>
+            <li>At least 8 characters—the more characters, the better</li>
+            <li>A mixture of both uppercase and lowercase letters</li>
+            <li>A mixture of letters and numbers</li>
+            <li>
+              Inclusion of at least one special character, e.g., ! @ # ? ]
+            </li>
+            <li>
+              Note: do not use < or > in your password, as both can cause
+              problems in Web browsers
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
